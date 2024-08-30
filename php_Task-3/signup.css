@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,     #44c0f5, #9b60e4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container for the form */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+/* Decorative Circle 
+form::before {
+    content: '';
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    z-index: -1;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+    
+*/
+
+/* Heading */
+
+#one {
+    text-align: center;
+    color: rgb(47, 93, 230);
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+#two{
+    color: rgb(231, 58, 205);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Input fields */
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6e8efb;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.5);
+    outline: none;
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    text-decoration: none;
+}
+
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+}
+
+/* Link for login */
+.login-link1 {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+.login.www a{ 
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+
+
+
+.login-link:hover {
+    color: #6e8efb;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        padding: 30px;
+    }
+
+    form::before {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: -50px;
+    }
+}
